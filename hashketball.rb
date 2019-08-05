@@ -289,8 +289,8 @@ def player_with_longest_name
   player = nil
   game_hash.each do |l1key1, l1key2|
     l1key2[:players].each do |l2key1|
-       binding.pry
       l2key1.each do |l3key1, l3key2|
+        binding.pry
       end
     end
   end
