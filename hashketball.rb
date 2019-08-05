@@ -302,5 +302,14 @@ end
 
 def long_name_steals_a_ton?
   player = player_with_longest_name
+  most_steals = 0
+  game_hash.each do |l1key1, l1key2|
+    l1key2[:players].each do |l2key1|
+      l2key1.each do |l3key1, l3key2|
+        if most_steals < l3key2[:steals][0]
+        end
+      end
+    end
+  end
   binding.pry
 end
