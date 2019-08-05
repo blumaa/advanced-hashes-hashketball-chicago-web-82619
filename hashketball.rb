@@ -290,7 +290,10 @@ def player_with_longest_name
   game_hash.each do |l1key1, l1key2|
     l1key2[:players].each do |l2key1|
       l2key1.each do |l3key1, l3key2|
-        binding.pry
+        if longest_name < l3key1.to_s.length
+          longest_name = l3key1.to_s.length
+          player = l3key1.to_s
+        end
       end
     end
   end
